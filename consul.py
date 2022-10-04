@@ -45,7 +45,7 @@ config = {
     "data_dir": "/var/lib/consul",
     "acl_datacenter": "server1",
     "acl_default_policy": "allow",
-    "encrypt": keygen
+    "encrypt": str(keygen)
 }
 
 jsonString = json.dumps(config)
