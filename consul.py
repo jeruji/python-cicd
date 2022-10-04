@@ -30,7 +30,7 @@ with open('/etc/systemd/system/consul.service','w') as f:
 os.system('sudo systemctl daemon-reload')
 
 keygen = subprocess.check_output("consul keygen", shell=True)
-
+print(str(keygen))
 config = {
     "bootstrap": True,
     "server": True,
